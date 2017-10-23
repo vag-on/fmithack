@@ -35,11 +35,12 @@
             </div>
         </div>
         <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
+            <div class="col-md-9">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="col-md-3">
+                {% include 'bj/sidebar.html' %}
             </div>
         </div>
         
