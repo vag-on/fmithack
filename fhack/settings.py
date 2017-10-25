@@ -31,6 +31,10 @@ ALLOWED_HOSTS = ['127.0.0.1', 'flashuser.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    # 'admin_tools',
+    # 'admin_tools.theming',
+    # 'admin_tools.menu',
+    # 'admin_tools.dashboard',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +74,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 # `allauth` needs this from django
+                'django.template.context_processors.request',
+
                 'django.template.context_processors.request',
             ],
         },
@@ -136,3 +143,4 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+# ADMIN_TOOLS_THEMING_CSS = 'css/theming.css'

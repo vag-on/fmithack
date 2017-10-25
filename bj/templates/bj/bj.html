@@ -1,0 +1,79 @@
+{% extends 'bj/base.html' %}
+{% block content %}
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Группа</label>
+    <select class="form-control">
+  		<option>АИС11</option>
+  		<option>ПМИ11</option>
+  		<option>МФ11</option>
+  		<option>МИ11</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Предмет</label>
+    <select class="form-control">
+  		<option>Информатика</option>
+  		<option>История информатики</option>
+	</select>
+  </div>
+  <button type="submit" class="btn btn-default">Показать</button>
+</form>
+<hr>
+<table class="table table-striped table-hover table-bordered"> 
+	<thead> 
+		<tr> 
+			<th></th> 
+			<th>Студент</th> 
+			<th>12.09</th> 
+			<th>17.09</th> 
+			<th>21.09</th> 
+			<th>25.09</th> 
+			<th>03.10</th> 
+			<th>13.10</th> 
+			<th><button class="btn btn-default btn-primary"><span class="glyphicon glyphicon-plus"></span></button></th> 
+			<th>Итого</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr> 
+			<th scope="row">1</th> 
+			<th>Баширова Эльза</th> 
+			<th>2</th> 
+			<th>0</th> 
+			<th>3</th> 
+			<th>1</th> 
+			<th>Н</th> 
+			<th>0</th> 
+			<th></th> 
+			<th>6</th> 
+		</tr> 
+		<tr> 
+			<th scope="row">2</th> 
+			<th>Гайнуллин Роман</th> 
+			<th>0</th> 
+			<th>1</th> 
+			<th>2</th> 
+			<th>1</th> 
+			<th>0</th> 
+			<th>3</th> 
+			<th></th> 
+			<th>7</th> 
+		</tr> 
+		<tr> 
+			<th scope="row">3</th> 
+			<th>Ковалец Никита</th> 
+			<th>0</th> 
+			<th>Н</th> 
+			<th>3</th> 
+			<th>0</th> 
+			<th>1</th> 
+			<th>0</th> 
+			<th></th> 
+			<th>4</th>  
+		</tr> 
+	</tbody> 
+</table>
+
+{% endblock %}
